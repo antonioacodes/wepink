@@ -1,0 +1,18 @@
+{
+  "name": "configurable-pink-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "dev": "node --env-file-if-exists=.env --watch server.mjs",
+    "test": "node --test",
+    "admin:password": "node scripts/password.mjs"
+  },
+  "dependencies": {
+    "qrcode": "1.5.4"
+  }
+}
